@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 5</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let year = prompt("Enter any Year:");
+        let text;
+        if (year % 4 == 0) {
+            text = (year + " is a leap year");
+        }
+        else {
+            text = (year + " is not a leap year");
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+
+</html>

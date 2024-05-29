@@ -1,0 +1,56 @@
+//Create database
+CREATE DATABASE BankManagement;
+
+//Create tables
+CREATE TABLE Customers(
+	CustomerId INT AUTO_INCREMENT PRIMARY KEY,
+	Name VARCHAR(50) NOT NULL,
+	Address VARCHAR(50) NOT NULL,
+	PhoneNumber VARCHAR(15) NOT NULL,
+	Email VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Accounts(
+	AccountId INT AUTO_INCREMENT PRIMARY KEY,
+	CustomerId INT NOT NULL,
+	Type VARCHAR(20) NOT NULL,
+	Balance DECIMAL(20,2) NOT NULL
+);
+
+CREATE TABLE Transactions(
+	TransactionId INT AUTO_INCREMENT PRIMARY KEY,
+	AccountId INT NOT NULL,
+	Type VARCHAR(20) NOT NULL,
+	Amount DECIMAL(20,2) NOT NULL,
+	Date DATETIME NOT NULL
+);
+
+//Create stored procedure
+CREATE PROCEDURE CreateCustomer(
+	IN _name VARCHAR(50),
+	IN _address VARCHAR(50),
+	IN _phoneNumber VARCHAR(15),
+	IN _email VARCHAR(50)
+)
+BEGIN
+	INSERT INTO Customers (Name, Address, PhoneNumber, Email)
+	VALUES(_name, _address, _phoneNumber, _email);
+END
+
+//Create triggers
+CREATE TRIGGER UpdateBalance
+AFTER INSERT ON Transactions
+FOR EACH ROW
+BEGIN
+	DECLARE _transactionType VARCHAR(20);
+	SET _transactionType = NEW.Type;
+	IF _transactionType = 'DEPOSIT' THEN
+		UPDATE Accounts
+		SET Balance = Balance + NEW.Amount
+		WHERE AccountId = NEW.AccountId;
+	ELSEIF _transactionType = 'WITHDRAWAL' THEN
+		UPDATE Accounts
+		SET Balance = Balance - NEW.Amount
+		WHERE AccountId = NEW.AccountId;
+	END IF;
+END

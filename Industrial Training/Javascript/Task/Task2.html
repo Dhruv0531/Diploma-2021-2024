@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 2</title>
+    <style>
+        div{
+            height: 200px;
+            width:500px;
+            border: 3px solid black;
+            margin-top: 10px;
+            color:white;
+            background-color: red;
+        }
+        #txt{
+            margin: 3px 15px 3px 10px;
+            padding: 3px 30px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    Name:<input type="text" id="txt"></input>
+    <input type="submit" onclick="userInput()"></input>
+    <div id="container" ></div>
+    <script>
+        function userInput()
+        {
+            var name= document.getElementById('txt').value;
+            var result = document.getElementById('container');
+            result.innerHTML=name;
+        }
+    </script>
+</body>

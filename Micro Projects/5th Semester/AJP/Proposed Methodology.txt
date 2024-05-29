@@ -1,0 +1,37 @@
+The Employee Record Management System is designed to efficiently handle employee data, enabling functionalities such as adding new employee records, viewing all employee details, searching for specific employees, and updating existing employee information. The system utilizes Java Swing components for a user-friendly interface.
+
+Home Page Features
+Welcome Message
+Add Employee Details Button
+View Employee Details Button
+Search Employee Button
+Update Employee Details Button
+Exit Button
+Adding Employee Details
+Click on the Add Employee button to initiate the process.
+Fill in the following employee details:
+Employee ID
+Name
+Phone Number
+Email Address
+Age
+Gender
+Designation
+Salary
+Click Submit to save the employee's details to the database.
+Viewing Employee Details
+Click on the View Employee Details button to display all employee records in a table format.
+Editing Employee Details
+Click on the Edit Employee Details button.
+Enter the Employee ID for the employee whose details you want to edit.
+If the employee ID is invalid, a popup will display "Invalid Employee ID."
+If the ID is valid, a popup will prompt you to select a field to edit (e.g., Name, Phone Number, Email Address, etc.).
+After selecting a field, click Next and provide the new details.
+Click Submit to save the updated information to the database.
+Searching Employee Details
+Click on the Search Employee button.
+Enter the Employee ID for the employee you want to search.
+If the employee with the provided ID exists, all details will be displayed in a table format.
+If the employee does not exist, a message stating "Employee does not exist" will be displayed.
+Exiting the System
+Click on the Exit button to exit the Employee Management System.

@@ -1,0 +1,28 @@
+<!dotype html>
+<html>
+<head>
+      <title>Confirm</title>
+</head>	  
+<body>
+       <input type="button" value="Click here" onclick="confirmation()">
+	   
+	   <script>
+	        function confirmation()
+			{
+			   var demoval = confirm("Are you Interested or Not!");
+			   // alert(demoval);
+			   
+			   if(demoval==true)
+			   {
+			       document.write("Interested");
+				  return true;
+			   }
+			  else
+			  {
+			   document.write("Not Interested");
+			   return false
+			  }
+			}
+	  </script>		
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+ <html>
+  <head>
+      <title>Color</title>
+   </head>
+  <body>
+  
+    <input type="text" id="t"></input>
+
+   <input type="color" id="c"></input>
+   
+   <button  id="b" type="button" value="Change color" onclick="changeColor()">submit</button>
+   <script>
+     function changeColor()
+	 {
+	     let color = document.getElementById("c").value;
+		 document.body.style.backgroundColor = color;
+		 document.getElementById("t").value = color;
+	 }
+   </script>	 
+   
+  </body>
+</html>  

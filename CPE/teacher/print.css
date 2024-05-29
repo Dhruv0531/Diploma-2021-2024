@@ -1,0 +1,28 @@
+/* Hide non-essential elements for printing */
+
+@media print {
+
+    .main,
+    /* Include any specific selectors for "Search by columns select boxes" and the print button */
+    .search-by-columns,
+    .print-button {
+      display: none;
+    }
+    /* Center the heading and table */
+    #stud_attendance {
+      text-align: center;
+    }
+    #timetable {
+      margin: 0 auto;
+    }
+    /* Adjust table styling for print */
+    #timetable td,
+    #timetable th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    #timetable th {
+      background-color: lightgray;
+    }
+  }
+  

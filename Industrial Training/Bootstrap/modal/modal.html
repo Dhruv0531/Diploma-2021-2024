@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Modal</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+	<div class="container">
+	  
+	  <!-- Trigger the modal with a button -->
+	  <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal">Book Appointment</button>
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-md">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">X</button>
+			  <h4>Book Appointment</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+				Full Name:<input type="text"><br><br>
+				Mobile:<input type="number"><br><br>
+				Gender:<input type="radio" name="gender">Male</input>
+					  <input type="radio" name="gender">Female</input><br><br>
+				Allergies:<input type="checkbox">xyz</input>
+					  <input type="checkbox">abc</input>
+					  <input type="checkbox">pqr</input><br><br>
+				City:<select>
+					<option>Nashik</option>
+					<option>Mumbai</option>
+					<option>Pune</option>
+				</select>          
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	  
+	</div>
+
+	</body>
+</html>

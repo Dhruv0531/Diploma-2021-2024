@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onchange</title>
+</head>
+<body>
+	<h2>Onchage Event</h2>
+	<p id="demo"></p>
+	<select onchange="subject_data(this.value
+	)">
+		<option>Select Subject</option>
+		<option>Englsih</option>
+		<option>Marathi</option>
+		<option>Hindi</option>
+
+	</select>
+
+	<script type="text/javascript">
+		function subject_data(subject)
+		{
+			document.getElementById('demo').innerHTML='You selected '+subject;
+		}
+	</script>
+	
+
+</body>
+</html>

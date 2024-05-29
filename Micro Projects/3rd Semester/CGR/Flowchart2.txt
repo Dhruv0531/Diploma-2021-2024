@@ -1,0 +1,19 @@
+Start
+
+• Initialize graphics window (Set graphics mode, Set window size) 
+
+• Create a circle for the sun 
+
+• Set projection parameters (Set viewport, Set world coordinates) 
+
+• For each planet, draw a circle and connect it to the sun (Draw a line, Draw a circle) 
+
+• For each planet, draw the orbit (Draw a circle) 
+
+• For each planet, draw its associated moons (Draw a circle and connect it to the planet) 
+
+• For each planet, draw its rings (Draw a circle) 
+
+• Update the graphics window (Refresh window, Render scene) 
+
+End

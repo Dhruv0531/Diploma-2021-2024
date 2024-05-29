@@ -1,0 +1,121 @@
+//Start
+
+//Get user input to determine which action to take
+
+Input: Action
+
+//If action is Deposit
+
+IF (Action == "Deposit")
+
+{
+  //Get user input for account number
+  Input: AccountNumber
+
+  //Get user input for amount to deposit
+  Input: Amount
+
+  //Check if account number exists
+  IF (AccountNumber Exists)
+  {
+    //Update account balance
+    AccountBalance = AccountBalance + Amount
+
+    //Display success message
+    Output: "Deposit Successful!"
+  }
+  ELSE
+  {
+    //Display error message
+    Output: "Account not found!"
+  }
+}
+
+//If action is Withdraw
+
+ELSE IF (Action == "Withdraw")
+
+{
+  //Get user input for account number
+  Input: AccountNumber
+
+  //Get user input for amount to withdraw
+  Input: Amount
+
+  //Check if account number exists
+  IF (AccountNumber Exists)
+  {
+    //Check if sufficient funds
+    IF (AccountBalance >= Amount)
+    {
+      //Update account balance
+      AccountBalance = AccountBalance - Amount
+
+      //Display success message
+      Output: "Withdrawal Successful!"
+    }
+    ELSE
+    {
+      //Display insufficient funds message
+      Output: "Insufficient funds!"
+    }
+  }
+  ELSE
+  {
+    //Display error message
+    Output: "Account not found!" 
+  }
+}
+
+//If action is Transfer
+
+ELSE IF (Action == "Transfer")
+
+{
+  //Get user input for source account number
+  Input: SourceAccountNumber
+
+  //Get user input for destination account number
+  Input: DestinationAccountNumber
+
+  //Get user input for amount to transfer
+  Input: Amount
+
+  //Check if source account number exists
+  IF (SourceAccountNumber Exists)
+  {
+    //Check if sufficient funds
+    IF (AccountBalance >= Amount)
+    {
+      //Check if destination account number exists
+      IF (DestinationAccountNumber Exists)
+      {
+        //Update source account balance
+        SourceAccountBalance = SourceAccountBalance - Amount
+
+        //Update destination account balance
+        DestinationAccountBalance = DestinationAccountBalance + Amount
+      
+        //Display success message
+        Output: "Transfer Successful!" 
+      }
+      ELSE
+      {
+        //Display error message
+        Output: "Destination account not found!"
+      }
+    }
+    ELSE
+    {
+      //Display insufficient funds message
+      Output: "Insufficient funds!"
+    }
+  }
+  ELSE
+  {
+    //Display error message
+    Output: "Source account not found!"
+  }
+}
+
+//End

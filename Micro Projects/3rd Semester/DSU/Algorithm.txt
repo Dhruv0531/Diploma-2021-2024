@@ -1,0 +1,63 @@
+Tower of Hanoi
+
+Step 1: Start 
+Step 2: Input the number of disks 
+Step 3: Create a stack to hold the disks 
+Step 4: Push the disks onto the stack 
+Step 5: Create helper stacks to hold the disks 
+Step 6: Move the top disk from the first stack to one of the helper stacks, and then the top disk from the helper stack to the remaining stack 
+Step 7: Keep repeating step 6 until all the disks have been moved to the final stack 
+Step 8: End 
+
+Greatest Common Divisor 
+
+Step 1: Start 
+Step 2: Input two numbers 
+Step 3: Create a stack and push the two numbers onto it 
+Step 4: Pop the two numbers off the stack 
+Step 5: Check if one of the numbers is 0 
+Step 6: If one of the numbers is 0, the other number is the divisor 
+Step 7: Otherwise, push both numbers onto the stack 
+Step 8: Subtract the smaller number from the larger number and push the result onto the stack 
+Step 9: Keep repeating steps 4-8 until one of the numbers is 0 
+Step 10: The other number is the divisor 
+Step 11: End 
+
+Hailstone Sequence 
+
+Step 1: Start 
+Step 2: Input a number 
+Step 3: Create a stack and push the number onto it 
+Step 4: Pop the number off the stack 
+Step 5: Check if the number is 1 
+Step 6: If the number is 1, the sequence is complete 
+Step 7: Otherwise, push the number onto the stack 
+Step 8: Check if the number is even 
+Step 9: If the number is even, divide it by 2 and push the result onto the stack 
+Step 10: Otherwise, multiply the number by 3 and add 1 and push the result onto the stack 
+Step 11: Keep repeating steps 4-10 until the number is 1 
+Step 12: End 
+
+Fibonacci Series 
+
+Step 1: Start 
+Step 2: Input the number of terms 
+Step 3: Create a stack and push two terms (0 and 1) onto it 
+Step 4: Pop the two terms off the stack 
+Step 5: Add the two terms and push the result onto the stack 
+Step 6: Keep repeating steps 4-5 until the desired number of terms has been reached 
+Step 7: End 
+
+Factorial of Number Using Recursive Stack 
+
+Step 1: Start 
+Step 2: Input a number 
+Step 3: Create a stack and push the number onto it 
+Step 4: Pop the number off the stack 
+Step 5: Check if the number is 1 
+Step 6: If the number is 1, the result is 1 
+Step 7: Otherwise, push the number onto the stack 
+Step 8: Subtract 1 from the number and push the result onto the stack 
+Step 9: Keep repeating steps 4-8 until the number is 1 
+Step 10: Multiply all the numbers on the stack to get the result 
+Step 11: End

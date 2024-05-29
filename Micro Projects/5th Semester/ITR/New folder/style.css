@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+header {
+  box-shadow: 0rem 0rem 1rem 0rem black;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8.5rem;
+  background-color: orange;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0rem 2.3rem;
+  font-size: large;
+}
+nav ul li:hover {
+  color: rgb(255, 255, 255);
+}
+.left {
+  font-size: 4rem;
+  margin-left: 13.5rem;
+  width: 20%;
+  font-weight: 600;
+  font-family: poppins;
+}
+.right {
+  padding-right: 2.5rem;
+  margin-right: 20rem;
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  margin-right: 130rem;
+  margin-top: 1.9rem;
+  padding-right: 30rem;
+  padding-bottom: 20rem;
+}
+.searchinput {
+  color: gray;
+  font-size: large;
+}
+.searchinput {
+  background-color: white;
+  position: absolute;
+  height: 3rem;
+}
+#logo {
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  mix-blend-mode: color-burn;
+  background-color: transparent;
+  https://png.pngtree.com/template/20200809/ourmid/pngtree-modern-sneaker-shoe-logo-image_401564.jpg
+  margin-left: -49rem;
+  margin-top: -6.6rem;
+}
+.paragraph {
+  font-family: poppins;
+  font-size: 3rem;
+  padding-left: 5rem;
+  padding-bottom: 70rem;
+  padding-top: 19rem;
+  position: absolute;
+}
+input {
+  padding-right: 50rem;
+  padding-left: 4rem;
+  margin-right: 0.5rem;
+}
+.shoes {
+  position: absolute;
+  margin-left: 81.7rem;
+  margin-top: 8.3rem;
+  orientation: landscape;
+}
+.searchBack {
+  background-color: black;
+  height: 7rem;
+  position: absolute;
+  width: 100%;
+}
+.searchbox {
+  position: absolute;
+  width: 1rem;
+  padding-top: 1.5rem;
+}
+marquee {
+  width: 100%;
+  height: 1.8rem;
+  direction: left;
+  color: white;
+  margin-top: 4.7rem;
+}
+marquee:hover {
+  cursor: pointer;
+}
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  border-radius: 2rem;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

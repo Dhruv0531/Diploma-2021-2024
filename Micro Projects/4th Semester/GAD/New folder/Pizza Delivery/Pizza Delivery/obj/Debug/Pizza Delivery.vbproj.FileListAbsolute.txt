@@ -1,0 +1,10 @@
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\bin\Debug\Pizza Delivery.exe.config
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\bin\Debug\Pizza Delivery.exe
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\bin\Debug\Pizza Delivery.pdb
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\bin\Debug\Pizza Delivery.xml
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza_Delivery.Form1.resources
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza_Delivery.Resources.resources
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza Delivery.vbproj.GenerateResource.Cache
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza Delivery.exe
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza Delivery.xml
+E:\Micro Projects\4th Semister\GAD\New folder\Pizza Delivery\Pizza Delivery\obj\Debug\Pizza Delivery.pdb

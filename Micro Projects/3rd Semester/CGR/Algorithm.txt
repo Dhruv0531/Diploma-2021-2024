@@ -1,0 +1,21 @@
+Step 1: Start.
+
+Step 2: Initialize the graphics library.
+
+Step 3: Create a window of a desired size.
+
+Step 4: Draw a circle to represent the sun in the center of the window.
+
+Step 5: Draw a set of concentric circles around the sun to represent the orbits of the planets.
+
+Step 6: Draw each planet along its respective orbit.
+
+Step 7: Add details such as rings (for Saturn), moons, clouds, etc.
+
+Step 8: Use color and shading to make the scene more realistic.
+
+Step 9: Add a light source to simulate the sun’s light.
+
+Step 10: Simulate the motion of the planets by changing their positions on the orbits.
+
+Step 11: End.

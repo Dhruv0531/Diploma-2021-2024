@@ -1,0 +1,8 @@
+step 1 : Create a class for BankAccount which would have the attributes like accountNumber, accountHolderName, accountBalance 
+step 2 : Create functions for opening a bank account, withtaking money, depositing money, displaying bank account details 
+step 3 : Create a menu for the user to select the desired operation for managing their bank account 
+step 4 : Create another class for Bank which would have the attributes like branchName, branchAddress, branchManager
+step 5 : Create functions for creating a new bank branch, displaying the bank branch details, adding new customers 
+step 6 : Create a main() function in the program to call the functions of both the classes 
+step 7 : Create a loop to allow the user to select the desired operation and perform the desired operations on the bank account 
+step 8 : Exit the program after the user has completed all the operations.

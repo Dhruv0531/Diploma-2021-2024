@@ -1,0 +1,43 @@
+exit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Create the main frame
+                JFrame mainFrame = new JFrame("Main Frame");
+                mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                mainFrame.setSize(500, 500);
+
+                // Create a separate thread for the progress bar
+                Thread progressBarThread = new Thread(new Runnable() {
+                    public void run() {
+                        // Create the popup frame
+                        JFrame popup = new JFrame("Progress");
+                        popup.setLayout(null);
+                        popup.setSize(300, 100);
+                        popup.setVisible(true);
+                        popup.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+                        JProgressBar jb = new JProgressBar(0, 100);
+                        jb.setValue(0);
+                        jb.setStringPainted(true);
+                        jb.setBounds(10, 10, 280, 30);
+                        popup.add(jb);
+
+                        int i = 0;
+                        while (i <= 100) {
+                            jb.setValue(i);
+                            i += 10;
+                            try {
+                                Thread.sleep(500);
+                            } catch (Exception ex) {
+                            }
+                        }
+
+                        // Close the popup when progress is complete
+                        popup.dispose();
+                        System.exit(0);
+                    }
+                });
+
+                progressBarThread.start();
+            }
+
+        });

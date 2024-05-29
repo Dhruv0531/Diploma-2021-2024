@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PizzaDelivery", "PizzaDelivery\PizzaDelivery.vbproj", "{726ECA1E-813A-45AF-AD0F-9FD08C389F7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{726ECA1E-813A-45AF-AD0F-9FD08C389F7D}.Debug|x86.ActiveCfg = Debug|x86
+		{726ECA1E-813A-45AF-AD0F-9FD08C389F7D}.Debug|x86.Build.0 = Debug|x86
+		{726ECA1E-813A-45AF-AD0F-9FD08C389F7D}.Release|x86.ActiveCfg = Release|x86
+		{726ECA1E-813A-45AF-AD0F-9FD08C389F7D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

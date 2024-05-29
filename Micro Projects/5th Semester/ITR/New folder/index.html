@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Run On Sneaks</title>
+    <link rel="icon" href="img/Screenshot (32).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }body {   background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: "Poppins", sans-serif;
+        }
+        header {
+            box-shadow: 0rem 0rem 1rem 0rem black;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 8.5rem;
+            background-color: orange;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0rem 2.3rem;
+            font-size: large;
+        }
+        nav ul li:hover {
+            color: rgb(255, 255, 255);
+        }
+        .left {
+            font-size: 4rem;
+            margin-left: 13.5rem;
+            width: 20%;
+            font-weight: 600;
+            font-family: poppins;
+        }
+        .right {
+            padding-right: 2.5rem;
+            margin-right: 20rem;
+            cursor: pointer;
+        }
+        .search {
+            display: flex;
+            margin-right: 130rem;
+            margin-top: 1.9rem;
+            padding-right: 30rem;
+            padding-bottom: 20rem;
+        }
+        .searchinput {
+            color: gray;
+            font-size: large;
+        }
+        .searchinput {
+            background-color: white;
+            position: absolute;
+            height: 3rem;
+        }
+        #logo {
+            height: 13rem;
+            width: 13rem;
+            position: absolute;
+            background-color: transparent;
+            margin-left: -49rem;
+            margin-top: -6.6rem;
+            mix-blend-mode: color-burn;
+        }
+        .paragraph {
+            font-family: poppins;
+            font-size: 3rem;
+            padding-left: 5rem;
+            padding-bottom: 70rem;
+            padding-top: 19rem;
+            position: absolute;
+        }
+        input {
+            padding-right: 50rem;
+            padding-left: 4rem;
+            margin-right: 0.5rem;
+        }
+        .shoes {
+            position: absolute;
+            margin-left: 81.7rem;
+            margin-top: 8.3rem;
+            orientation: landscape;
+        }
+        .searchBack {
+            background-color: black;
+            height: 7rem;
+            position: absolute;
+            width: 100%;
+        }
+        .searchbox {
+            position: absolute;
+            width: 1rem;
+            padding-top: 1.5rem;
+        }
+        marquee {
+            width: 100%;
+            height: 1.8rem;
+            direction: left;
+            color: white;
+            margin-top: 4.7rem;
+        }
+        marquee:hover {
+            cursor: pointer;
+        }
+        .offer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            border-radius: 2rem;
+        }
+        @media (max-width: 991px) {
+            html {
+                font-size: 55%;
+            }
+        }
+        @media (max-width: 768px) {}
+        @media (max-width: 450px) {
+            html {
+                font-size: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">RunOnSneaks</div>
+            <div class="img5">
+                <a href="index.html"> <img id="logo"
+                        src="https://png.pngtree.com/template/20200809/ourmid/pngtree-modern-sneaker-shoe-logo-image_401564.jpg"
+                        alt="logo"></a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>New & Trending</li>
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Kids & Teens</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--SEARCH BAR-->
+    <div class="searchBack">
+        <div class="container">
+            <div class="searchbox">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="searchinput" placeholder="Search Here">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <marquee>Independence Day Sale 25% off on Air Jordans</marquee>
+    </div>
+
+    <!--MAIN TAGLINE-->
+    <div class="paragraph">
+        <p>Welcome to the world of fantastic footwear!<br>
+            We offer high-quality, <br>stylish shoes for every occasion.</p>
+    </div>
+
+    <!--SHOE IMAGES-->
+    <div class="shoes">
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="https://images.pexels.com/photos/9251961/pexels-photo-9251961.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            style="width:100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.pexels.com/photos/12368183/pexels-photo-12368183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            style="width:100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.pexels.com/photos/8859173/pexels-photo-8859173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" style="margin-left:-15.2rem;"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"
+                        style="margin-right:-15.2rem; right: -4.8rem;"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

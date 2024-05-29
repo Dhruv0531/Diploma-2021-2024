@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 4</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        alert("-----MENU-----\n1. Enter 1 for Addition \n2. Enter 2 for Substraction \n3. Enter 3 for Multiplication \n4. Enter 4 for Division");
+        let ch = parseInt(prompt("Enter your choice:"));
+        let n1, n2, text;
+        switch (ch) {
+            case 1:
+                n1 = parseInt(prompt("Enter First Number:"));
+                n2 = parseInt(prompt("Enter Second Number:"));
+                text = ("Addition:" + (n1 + n2));
+                break;
+            case 2:
+                n1 = parseInt(prompt("Enter First Number:"));
+                n2 = parseInt(prompt("Enter Second Number:"));
+                text = ("Substraction:" + (n1 - n2));
+                break;
+            case 3:
+                n1 = parseInt(prompt("Enter First Number:"));
+                n2 = parseInt(prompt("Enter Second Number:"));
+                text = ("Multiplication:" + (n1 * n2));
+                break;
+            case 4:
+                n1 = parseInt(prompt("Enter First Number:"));
+                n2 = parseInt(prompt("Enter Second Number:"));
+                text = ("Division:" + (n1 / n2));
+                break;
+            default:
+                alert("Invalid Choice");
+                text = ("Invalid Choice");
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+Our next topic is PHP.
+PHP, which stands for Hypertext Preprocessor, is a popular server-side scripting language used for web development. It is embedded in HTML and executed on the server to generate dynamic content for websites.
+PHP was created by Rasmus Lerdorf in 1994 as a simple set of Perl scripts to manage his personal website. Over time, it evolved into a more robust language with the release of PHP 3 in 1998, gaining significant popularity in the web development community. 
+The latest version of php is 8.2.
+PHP can be used for tasks such as collecting form data, generating dynamic page content, or sending and receiving cookies. It's used in popular platforms like WordPress, Facebook, and Wikipedia.
+To run a php code, first we need to install a server. The widly used server for php is XAMPP.
+XAMPP is a popular software package that provides a pre-configured environment for running PHP-based web applications on a local machine. It includes several components, but Apache and MySQL are the most commonly used ones for PHP development. 
+After successfully installing the xampp server, go to the xampp control panel and start Apache and MySQL services.
+And now to create a table open any web browser and type localhost/phpMyAdmin and hit enter, then click on new and enter the name of dtatabase and click on create
+the database is created. After creating a database structure page will open, there we can create a new table. Just type the table name and enter the number of columns needed in table and click on go. Then enter the name of column and select the datatype and length of  characters that can be inserted into that column, then click save. A table is created.
+Concepts of PHP:
+Constants- Sensitive.Insensitive,Array,Global
+Datatype-  Array,Boolean,Float,Null,Object,String
+Operator- Arithmetic,Assignment,Comparison,Conditional,Increment,Decrement,Logical
+Math- Abs,Min & min,Rand,Round,Pi,sqrt
+Here is an example of how to connect the database to html file
+<?php: This opening tag indicates the start of PHP code.
+$conn = mysqli_connect("localhost", "root", "", "e_shop") or die('connection feild');: The second line is where the actual database connection is made using the mysqli_connect function.
+mysqli_connect is a built-in PHP function to establish a connection to a MySQL database server.
+The function takes four arguments:
+The first argument is the hostname or IP address of the MySQL server (in this case, "localhost" refers to the server running on the same machine).
+The second argument is the username for the database (in this case, "root" is the default username for XAMPP installations).
+The third argument is the password for the database (in this case, it is an empty string as no password is set for the root user).
+The fourth argument is the name of the database to be used (in this case, "e_shop" is name of the database).
+If the connection is successful, the mysqli_connect function returns a connection object, which is then assigned to the variable $conn.
+If the connection fails, the or die('connection feild') part of the line executes, causing the script to terminate and display the message 'connection feild' (typo: it should be 'connection failed').
+$_POST is a superglobal variable used to collect form data that is submitted using the HTTP POST method. When a form is submitted with the method attribute set to "post," the data entered by the user in the form fields is sent to the server as part of the request body, and PHP populates the $_POST array with this data.
+mysqli_prepare is a function provided by the mysqli extension in PHP. It is used to prepare an SQL statement with placeholders for bound parameters. Prepared statements help prevent SQL injection attacks by separating the SQL query from the user-supplied data.
+These two paramters are passed in mysqli_prepare function:
+$link: A mysqli object representing the database connection.
+$query: The SQL query with placeholders for the parameters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apache HTTP Server: Apache is a widely-used web server that supports PHP and other scripting languages. It serves as the backbone of XAMPP, responsible for handling HTTP requests and responses. Apache is highly configurable and can interpret PHP scripts, making it an excellent choice for local development.
+
+MySQL Database: MySQL is a popular open-source relational database management system. It is used to store and manage data for web applications. PHP, being a server-side scripting language, is often used in conjunction with databases to build dynamic web pages. MySQL integrates seamlessly with PHP, making it a standard choice for XAMPP.
+
+These two components, Apache and MySQL, provide a complete solution for developing and testing PHP applications locally. With Apache handling HTTP requests and MySQL managing the data, developers can create and test their web applications without the need for a remote web server or database server during the development phase.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHP, also known as Hypertext Preprocessor, is a powerful server-side scripting language used for web development. It has a long history, starting as a simple set of Perl scripts created by Rasmus Lerdorf in 1994. Since then, PHP has evolved into a robust language and gained popularity in the web development community.
+
+The latest version of PHP is 8.2, and it is widely used for tasks such as collecting form data, generating dynamic page content, and handling cookies. Notably, PHP is used in popular platforms like WordPress, Facebook, and Wikipedia.
+
+To run PHP code, you need to install a server like XAMPP. XAMPP provides a pre-configured environment that includes Apache and MySQL, two components commonly used for PHP development. Once you have XAMPP installed, you can start the Apache and MySQL services from the XAMPP control panel.
+
+After setting up the server, you can create a database by accessing phpMyAdmin. Simply open a web browser and type "localhost/phpMyAdmin" in the address bar. Once there, you can create a new database by entering its name and clicking on the "Create" button. After creating the database, you can proceed to create tables within it by specifying the table name, number of columns, and column details.
+
+In PHP, you can work with various concepts like constants, different data types (such as arrays, booleans, strings), and operators (arithmetic, assignment, comparison, conditional, etc.). PHP also provides math functions like `abs`, `min`, `rand`, and constants like `PI` for mathematical operations.
+
+Now, let's talk about connecting a database to an HTML file using PHP. To establish the connection, you can open the PHP code using the `<?php` opening tag. From there, you'll use the `mysqli_connect` function to connect to the database server. 
+mysqli_connect is a built-in PHP function to establish a connection to a MySQL database server.
+Here,
+The first argument is the hostname or IP address of the MySQL server (in this case, "localhost" refers to the server running on the same machine).
+The second argument is the username for the database (in this case, "root" is the default username for XAMPP installations).
+The third argument is the password for the database (in this case, it is an empty string as no password is set for the root user).
+The fourth argument is the name of the database to be used (in this case, "e_shop" is name of the database). If the connection is successful, the function returns a connection object, which you can store in a variable like `$conn`. If the connection fails, you can handle the error by using `or die('connection failed')`.
+The next example is to collect data from html page and store it in the database
+To collect form data, you can use the `$_POST` superglobal variable. It contains the data submitted through a form with the HTTP POST method. By accessing the submitted data using `$_POST["input_name"]`, you can process and manipulate it as needed.
+
+To execute SQL queries, you can use `mysqli_prepare` to prepare an SQL statement with placeholders for bound parameters. This helps prevent SQL injection attacks.
+In the mysqli_prepare function, two parameters are passed:
+
+$link: A mysqli object representing the database connection. This object is used to establish the connection to the MySQL database. The $link parameter is usually obtained by calling mysqli_connect or mysqli_init before preparing the statement.
+$query:The SQL query with placeholders for the parameters.
+
+
+
+

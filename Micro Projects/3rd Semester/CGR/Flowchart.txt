@@ -1,0 +1,27 @@
+Start
+
+//Declare input parameters
+int numberOfPlanets;
+float planetSize[];
+float planetDistance[];
+
+//Create graphics window
+CreateGraphicsWindow();
+
+//Set up coordinate system
+SetCoordinateSystem();
+
+//Loop for each planet
+for(int i = 0; i < numberOfPlanets; i++)
+{
+	//Draw planet
+	DrawPlanet(planetSize[i]);
+	
+	//Move to next planet
+	MoveToPlanet(planetDistance[i]);
+}
+
+//Draw orbit
+DrawOrbit();
+
+End

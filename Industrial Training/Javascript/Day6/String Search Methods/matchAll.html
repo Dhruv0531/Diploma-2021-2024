@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The matchAll() Method</h2>
+<p>The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).</p>
+
+
+
+<p id="demo"></p>
+
+<script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll("Cats");
+
+document.getElementById("demo").innerHTML = Array.from(iterator);
+</script>
+
+</body>
+</html>

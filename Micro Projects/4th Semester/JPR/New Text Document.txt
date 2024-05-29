@@ -1,0 +1,13 @@
+The program starts with the declaration of an Employee class that has instance variables such as empid, age, name, designation, salary, and contact_no. It also has several methods to get employee details from the user, search an employee by their ID, update an employee by their ID and delete an employee by their id.
+
+The getdata() method uses a Scanner object to get employee details from the user. It prompts the user to enter employee ID, name, salary, designation, age, and contact number. It also validates the user inputs for age and contact number. If the user enters an age less than zero or a contact number that is not ten digits long, it prompts the user to enter a valid value.
+
+The search() method takes an array of employees, the number of employees, and an employee ID to search for an employee in the array. If it finds the employee with the given ID, it displays the details of the employee in a formatted table. If the employee is not found with the given ID, it displays a message.
+
+The update() method takes an array of employees and the number of employees to update an employee record by their ID. It prompts the user to enter the employee ID to update and the field they want to update (salary, age, contact number, or designation). It then finds the employee in the array and updates the corresponding field as per user input. If the user enters an invalid contact number, it prompts the user to enter a valid number.
+
+The delete() method takes an array of Employee objects and the total number of employees in the array as parameters. It prompts the user to input the ID of the employee they wish to delete.
+The method then searches for the employee with the given ID in the array by comparing it with the empid field of each Employee object in the array. If the employee is found, the method stores the index of the employee in a variable called index.
+Next, the method shifts all the remaining elements in the array to the left starting from the index of the deleted employee. This effectively removes the deleted employee from the array.
+The method also decrements the total number of employees by one and returns the updated count to the caller.
+If the employee with the given ID is not found in the array, the method returns the original count of employees without making any changes to the array.
